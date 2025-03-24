@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../../../../../media/gree/DATA11/代码/vue3_admin_template"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "oimo-vue"
+	}
+}
