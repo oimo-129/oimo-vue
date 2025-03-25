@@ -1,23 +1,27 @@
 <template>
-  <div class="box">
-    <h1>后端管理Vue</h1>
-  </div>
+  <el-button type="primary" size="default" @click="">
+    测试按钮
+  </el-button>
+
+  <!-- 添加字体图标 -->
+  <el-button type="success" size="small" :icon="Edit"> 编辑按钮 </el-button>
 </template>
 
-<script setup lang="ts">
-// 这里可以添加组件逻辑
-const str = '我爱你祖国'
-</script>
+<script>
+import { defineComponent } from 'vue'
+import { ElConfigProvider } from 'element-plus'
+import { Edit } from '@element-plus/icons-vue'
 
-<style>
-.box {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f5f5f5;
-  color: #333;
-  font-family: Arial, sans-serif;
-}
-</style>
+export default defineComponent({
+  components: {
+    ElConfigProvider,
+  },
+  setup() {
+    return {
+      zIndex: 3000,
+      size: 'small',
+      Edit
+    }
+  },
+})
+</script>
